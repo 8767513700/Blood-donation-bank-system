@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Taker Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Blood Taker Login</h1>
+        <form id="login-form"  method="post" action="Taker.html">
+            <label for="username">Username:</label>
+            <input type="text" id="in1" name="t1" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="pass1" name="t2" placeholder="Enter your password" required>
+
+<label for="password">Email:</label>
+            <input type="email" id="email1" name="t3" placeholder="Enter your password" required>
+            <div id="error-message" class="error-message"></div>
+
+
+            <button type="submit" id="by" onclick="return amar()">Login</button>
+			  
+        <button type="reset" onclick="reset();" id="bu1" value="reset">Reset</button>
+   
+        </form>
+        <button><a href="login.html">Back</a></button>s
+    </div>
+<script language="javascript" text="text/javascript">
+
+
+   function amar()
+   {
+
+          var username = document.getElementById("in1").value;
+
+          var Password = document.getElementById("pass1").value;
+          
+          var email = document.getElementById("email1").value;
+
+          var demo= /\d/;
+         
+
+          if(username==""|| Password==""||email=="")
+              {
+ 
+                 alert("all field are mendatory");
+
+                 return false;
+
+              }
+
+              else if(username.length>10){
+
+alert("name should be  less than or equal to 10");
+
+return false;
+
+  }
+         else if( Password.search(/[0-9]/)==-1)
+          {
+
+           alert("passworld conntains at list one number");
+
+             return false;
+
+                 }
+
+              
+                
+
+                  else{
+
+                    return true;
+                  }
+
+
+
+
+
+   }
+
+   function reset(){
+   
+    alert("your data reset successfully");
+   
+    var c= document.getElementById("frm1");c.reset()
+
+    
+   }
+   
+    </script>
+	
+</body>
+</html>

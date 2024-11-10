@@ -1,0 +1,81 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Registration.css">
+</head>
+
+<body>
+    <div class="header_section">
+        <img src="mi.jpg" class="web_logo">
+        
+        <div class="menu_container">
+            <a href="home.html" class="menu">Home</a>
+            <a href="about_us.html" class="menu">About-us</a>
+            <a href="registration.html" class="menu">Registration</a>
+            <a href="contact-us.html" class="menu">Contact-us</a>
+            <a href="user-report.html" class="menu">user-report</a>
+        </div>
+    </div>
+
+  
+    <div class="form_container">
+        <center>
+        <h1 style="color: red;font-size: 40px;" class="page_heading">Registration</h1>
+            </center>
+        <form action="next.html">
+            <br>
+            <div class="marge">
+            <lable type="profile_logo">Enter your Full name:</lable>
+            <input type="text" class="input_box" name="full_name" placeholder="Enter full_name">
+
+            <br>
+            <lable"> Enter Mobile number:</lable>
+            <input type="number" class="input_box" name="fMmobile_number" placeholder="Enter MObile_number">
+
+            <br>
+            <lable> Enter DOb:</lable>
+            <input type="date" class="input_box" name="DOB" placeholder="Enter DOB">
+
+            <br>
+            <lable> Enter Time:</lable>
+            <input type="time" class="input_box" name="time" placeholder="Enter time">
+
+            <br>
+            <lable> Enter Address:</lable>
+            <textarea name="Address" class="input_box" placeholder="Enter Address"></textarea>
+
+            <br>
+            <lable>Select Gender</lable>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Other">Other
+
+            <br>
+            <lable>select City</lable>
+            <select name="city">
+                <option value="select">Select City</option>
+                <option value="select">Pune</option>
+                <option value="select">Nashik</option>
+                <option value="select">Mumbai</option>
+                <option value="select">Solapur</option>
+                <option value="Jalan">Jalan</option>
+            </select>
+            <br>
+
+            <input type="file" class="input_box" name="profile_photo" />
+            <br>
+
+            <input type="password" class="input_box" name="password" placeholder="Enter password">
+            <br>
+
+            <lable>select hobby</lable>
+            <input type="checkbox" name="reading" value="reading">reading
+            <input type="checkbox" name="swmming" value="reading">swmming
+            <input type="checkbox" name="cricket" value="reading">cricket
+            <input type="checkbox" name="kabbadi" value="reading">kabbadi
+            <br>
+            <input type="submit" name="submit_btn" value="Create my account" >
+        </form>
+        </div>
+    </div>
+</body>
+</html>

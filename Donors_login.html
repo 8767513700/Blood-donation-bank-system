@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Group Donor Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+  
+    
+        
+            <div class="login-container">
+        <h1>Blood Group Donor Login</h1>
+        <form id="login-form" method="post" action="donate.html">
+            <label for="username">Username:</label>
+            <input type="text" id="in1" name="t1" placeholder="Enter your username" required>
+
+            <label for="password">BloodGroup:</label>
+            <input type="password" id="pass1" name="t2"  placeholder="Enter your password" required>
+               
+			   <label for="password">Blood-Id:</label>
+            <input type="text" id="on1" name="t3" placeholder="Enter your password" required>
+
+
+            <button type="submit" id="by" onclick="return amar()">Login</button>
+			  
+        <button type="reset" onclick="reset();" id="bu1" value="reset">Reset</button>
+       
+   
+        </form>
+        <button><a href="login.html">Back</a></button>
+    </div>
+    
+	    <script language="javascript" text="text/javascript">
+
+
+   function amar()
+   {
+
+    var username = document.getElementById("in1").value;
+
+var Blood_Group = document.getElementById("pass1").value;
+
+var Own_Id = document.getElementById("on1").value;
+
+var demo= /\d/;
+
+
+if(username==""|| Blood_Group==""||Own_Id=="")
+    {
+
+       alert("all field are mendatory");
+
+       return false;
+
+    }
+
+    else if(username.length>10){
+
+alert("name should be  less than or equal to 10");
+
+return false;
+
+}
+    
+    else if(demo.test(Blood_Group)){
+
+      
+      alert(" invalidate blood group Blood group can't contain digits ");
+
+
+     return false;
+
+      }
+      
+
+        else{
+
+          return true;
+        }
+
+
+
+   }
+
+   function reset(){
+   
+    alert("your data reset successfully");
+   
+    var c= document.getElementById("frm1");c.reset()
+
+    
+   }
+   
+    </script>
+
+</body>
+</html>
